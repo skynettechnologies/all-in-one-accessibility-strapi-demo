@@ -145,6 +145,7 @@ export default function Footer({
           </div>
         </div>
       </div>
+      <script id="aioa-adawidget" src="https://www.skynettechnologies.com/accessibility/js/all-in-one-accessibility-js-widget-minify.js?colorcode=#A78BFA&token=ADAAIOA-17716A8676EBE7BE2B75B358CEF4D61B&position=bottom_right"></script>
     </footer>
   );
 }
