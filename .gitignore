@@ -3,3 +3,7 @@ readme-images
 .vscode
 .DS_Store
 **/.yarn
+
+# production
+package-lock.json
+yarn.lock

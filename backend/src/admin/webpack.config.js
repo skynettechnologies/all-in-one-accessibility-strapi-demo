@@ -53,9 +53,18 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = (config, webpack) => {
+module.exports = ({ env }) => ({
+  "netlify-deployments": {
+    enabled: true,
+    config: {
+      accessToken: process.env.NETLIFY_DEPLOYMENTS_PLUGIN_ACCESS_TOKEN
+    },
+  },
+});
+
+/*module.exports = (config, webpack) => {
   // Customize the output path and filename
- /* config.output = {
+  config.output = {
     ...config.output,
     path: path.resolve(__dirname, '../../build'), // Set the output path to the root build directory
     publicPath: '/', // Ensure paths do not include '/admin'
@@ -72,6 +81,5 @@ module.exports = (config, webpack) => {
       };
     }
   });
-*/
   return config;
-};
+};*/

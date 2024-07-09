@@ -7,6 +7,7 @@ import i18N from "@strapi/plugin-i18n/strapi-admin";
 import seo from "@strapi/plugin-seo/strapi-admin";
 import usersPermissions from "@strapi/plugin-users-permissions/strapi-admin";
 import allInOneAccessibility from "strapi-plugin-all-in-one-accessibility/strapi-admin";
+import netlifyDeployments from "strapi-plugin-netlify-deployments/strapi-admin";
 import { renderAdmin } from "@strapi/strapi/admin";
 
 renderAdmin(document.getElementById("strapi"), {
@@ -16,5 +17,6 @@ renderAdmin(document.getElementById("strapi"), {
     seo: seo,
     "users-permissions": usersPermissions,
     "all-in-one-accessibility": allInOneAccessibility,
+    "netlify-deployments": netlifyDeployments,
   },
 });
