@@ -55,7 +55,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = (config, webpack) => {
   // Customize the output path and filename
-  config.output = {
+ /* config.output = {
     ...config.output,
     path: path.resolve(__dirname, '../../build'), // Set the output path to the root build directory
     publicPath: '/', // Ensure paths do not include '/admin'
@@ -72,6 +72,6 @@ module.exports = (config, webpack) => {
       };
     }
   });
-
+*/
   return config;
 };
